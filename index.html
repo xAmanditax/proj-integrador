@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Validação de Horários</title>
+        <link rel="stylesheet" href="css/styles.css">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+    <header>
+        <div class="logo-container">
+            <!-- Espaço para colocar a logo -->
+            <img src="../imagem-logo.png" alt="Logo" class="logo">
+        </div>
+        <h1>VALIDAÇÃO DE HORÁRIOS PARA ALOCAÇÃO DE SALAS</h1>
+    </header>
+
+    <div class="container">
+        <form id="scheduleForm">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" required>
+
+            <label for="room">Sala:</label>
+            <input type="text" id="room" required>
+
+            <label for="date">Data:</label>
+            <input type="date" id="date" required>
+
+            <label for="startTime">Início:</label>
+            <input type="time" id="startTime" required>
+
+            <label for="endTime">Término:</label>
+            <input type="time" id="endTime" required>
+
+            <button type="submit">Verificar Disponibilidade</button>
+        </form>
+
+        <div id="result"></div>
+
+        <h2>Horários Agendados</h2>
+        <table id="scheduleTable">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sala</th>
+                    <th>Data</th>
+                    <th>Início</th>
+                    <th>Término</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

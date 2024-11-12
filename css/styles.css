@@ -1,0 +1,216 @@
+/* Resetando margens e padding para uma aparência mais consistente */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte principal mais fina e moderna */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte limpa e moderna */
+    font-weight: 300; /* Peso mais leve para dar um estilo mais fino */
+    background-image: url('../images/fundo.png'); 
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column; /* Flexbox para empilhar os elementos */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    min-height: 100vh; /* Garante que ocupe toda a altura da tela */
+    color: #333; /* Texto com cor mais suave */
+}
+
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+/* Estilo do cabeçalho */
+header {
+    width: 100%;
+    height: 50px;
+    padding: 2px 20px; /* Reduz o padding para diminuir a altura do header */
+    background-color: #E84855;
+    color: white;
+    position: fixed;
+    top: 30px; /* Espaço entre o topo da página e o header */
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center; /* Centraliza verticalmente a logo e o título */
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do container da logo */
+header .logo-container {
+    margin-right: 40px; /* Espaço entre a logo e o texto */
+    position: relative;
+    display: flex;
+    align-items: center; /* Centraliza a logo no header */
+}
+
+/* Estilo da logo */
+header .logo {
+    width: 110px; /* Aumenta a largura da logo */
+    height: 110px; /* Aumenta a altura da logo */
+    border-radius: 50%; /* Mantém a borda arredondada */
+    object-fit: cover;
+    position: relative;
+    top: -10px; /* Move a logo para baixo, ajustando para ultrapassar menos o header */
+}
+
+/* Ajuste do título no cabeçalho */
+header h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0;
+    letter-spacing: 1px;
+    white-space: nowrap;
+}
+
+
+
+
+
+
+
+
+/* Fonte Inter para o header e botão */
+header h1, button {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; /* Peso light para um estilo mais fino */
+}
+
+
+/* Estilo do container */
+.container {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 40px;
+    border-radius: 12px; /* Bordas mais suaves */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    width: auto; /* A largura agora é ajustável conforme o conteúdo */
+    max-width: 100%; /* A largura máxima vai até 100% da tela */
+    min-width: 600px; /* Define a largura mínima para evitar que o container fique muito pequeno */
+    border: 2px solid #3185fc; 
+    overflow: auto; 
+    max-height: 80vh; 
+    margin-top: 160px; /* Espaço para o cabeçalho fixo */
+}
+
+/* Estilo do formulário */
+form label {
+    font-size: 1em;
+    font-weight: 300; /* Peso mais leve e moderno */
+    color: #333;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    box-sizing: border-box; 
+    font-size: 1.1em;
+    color: #333;
+    transition: border-color 0.3s ease; /* Transição suave ao focar */
+}
+
+input:focus {
+    border-color: #3185fc; /* Cor da borda quando o campo estiver focado */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #3185fc;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    cursor: pointer;
+    font-size: 1.1em;
+    font-family: 'Inter', sans-serif; /* Aplica a fonte Inter SemiBold ao botão */
+    font-weight: 600; /* Define o peso da fonte como SemiBold */
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+button:hover {
+    background-color: #218838; /* Cor mais escura ao passar o mouse */
+}
+
+/* Resultado da verificação */
+#result {
+    margin-top: 20px;
+    font-weight: 300; /* Peso mais leve para um texto mais fluido */
+    text-align: center; 
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: 300; /* Fonte mais leve para um visual mais suave */
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Estilo das ações de editar e remover */
+.action-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btns button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px; /* Bordas arredondadas para os botões */
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.action-btns button.edit {
+    background-color: #3185fc;
+}
+
+.action-btns button.remove {
+    background-color: #dc3545;
+}
+
+.action-btns button:hover {
+    opacity: 0.85;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 1.4em;
+    }
+}
